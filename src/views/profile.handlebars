@@ -1,0 +1,20 @@
+<div>
+    <h1>Tu perfil</h1>
+    <p>{{user.name}}</p>
+    <p>{{user.email}}</p>
+    <p>{{user.age}}</p>
+    <br/>
+    <div>
+    {{#each product}}
+    <p>{{this.title}}</p>
+    <p>{{this.description}}</p>
+    <p>{{this.code}}</p>
+    <p>{{this.price}}</p>
+    <p>{{this.status}}</p>
+    <p>{{this.stock}}</p>
+    <p>{{this.category}}</p>
+    <p>{{this.image}}</p>
+    {{/each}}
+</div>   
+    <a href="api/sessions/logout"><button>Salir</button></a>
+</div>
